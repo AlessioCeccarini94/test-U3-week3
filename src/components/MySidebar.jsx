@@ -1,7 +1,7 @@
 import { Form, Nav } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { FaHome, FaRegHeart } from "react-icons/fa"
-import MyNavbar from "./MyNavbar"
+import SearchForm from "./SearcForm"
 
 function MySidebar() {
   return (
@@ -15,16 +15,7 @@ function MySidebar() {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/1024px-Apple_Music_logo.svg.png"
           alt=""
         />
-        <Form.Control
-          type="text"
-          className="ms-1 me-1 bg-dark text-light border-black"
-          placeholder="Search..."
-          value={""}
-          onChange={() => {
-            console.log("ciao")
-          }}
-        />
-
+        <SearchForm />
         <Nav.Link
           as={Link}
           to="./"

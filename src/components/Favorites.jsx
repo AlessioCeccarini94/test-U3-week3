@@ -1,5 +1,6 @@
 import { Col, Row } from "react-bootstrap"
 import { useSelector, useDispatch } from "react-redux"
+import Player from "./Player"
 
 const Favorites = () => {
   const favorites = useSelector((state) => {
@@ -35,7 +36,7 @@ const Favorites = () => {
                       Remove
                     </button>
                   </Col>
-                  <button className="btn btn-primary">play</button>
+                  <Player previewUrl={favorite.preview} />
                 </li>
               )
             })}

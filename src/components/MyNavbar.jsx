@@ -8,6 +8,8 @@ import {
   IoShuffleSharp,
   IoRepeat,
 } from "react-icons/io5"
+import SearchForm from "./SearcForm"
+
 function MyNavbar() {
   return (
     <Navbar
@@ -18,21 +20,22 @@ function MyNavbar() {
       <Container className="d-flex justify-content-between">
         <div className="d-flex align-items-center justify-content-between d-md-none">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <img
-            className="d-inline-block align-top w-25"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/1024px-Apple_Music_logo.svg.png"
-            alt=""
-          />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto justify-content-center">
               <Nav.Link as={Link} to="./">
                 Home
+                <SearchForm />
               </Nav.Link>
               <Nav.Link as={Link} to="./favorites">
                 Favorite
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <img
+            className="d-inline-block align-top w-25"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Music_logo.svg/1024px-Apple_Music_logo.svg.png"
+            alt=""
+          />
           <Button className="bg-dark border-0">LOGIN</Button>
         </div>
         <div className="align-items-center d-none d-md-flex">

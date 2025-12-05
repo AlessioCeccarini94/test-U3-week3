@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import MyNavbar from "./components/MyNavbar"
 import MusicList from "./components/MusicList"
 import Favorites from "./components/Favorites"
+import SearchPage from "./components/SearchPage"
 import { Provider } from "react-redux"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import store from "./redux/store"
@@ -32,6 +33,8 @@ function App() {
                   }
                 />
                 <Route path="/favorites" element={<Favorites />} />
+                <Route path="/search" element={<SearchPage />} />
+                <Route path="*" element={<h1>404</h1>} />
               </Routes>
             </Col>
           </Row>

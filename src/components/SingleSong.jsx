@@ -21,7 +21,6 @@ const SingleSong = ({ song }) => {
               role="button"
               onClick={() => {
                 dispatch(addFavoriteAction(song))
-                song.isFavorite = !song.isFavorite
               }}
             />
             <Player previewUrl={song.preview} />

@@ -21,10 +21,10 @@ function MyNavbar() {
         <div className="d-flex align-items-center justify-content-between d-md-none">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
+            <SearchForm />
             <Nav className="me-auto justify-content-center">
               <Nav.Link as={Link} to="./">
                 Home
-                <SearchForm />
               </Nav.Link>
               <Nav.Link as={Link} to="./favorites">
                 Favorite

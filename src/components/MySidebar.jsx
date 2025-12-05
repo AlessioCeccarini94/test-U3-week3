@@ -2,7 +2,6 @@ import { Form, Nav } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { FaHome, FaRegHeart } from "react-icons/fa"
 import SearchForm from "./SearcForm"
-
 function MySidebar() {
   return (
     <>

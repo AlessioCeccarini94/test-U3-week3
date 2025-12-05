@@ -28,7 +28,7 @@ function App() {
                     <div>
                       <MusicList params="pupo" />
                       <MusicList params="fausto leali" />
-                      <MusicList params="michael jackson" />
+                      <MusicList params="franco califano" />
                     </div>
                   }
                 />
